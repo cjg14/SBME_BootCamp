@@ -4,18 +4,17 @@ class main { //needs to exactly match the file
     public static void main (String[] args) {
         int[] foo = {0,1,2,3,4};
 
-        int[] bar = new int[100];
+        int[] hello = new int[100]; //Changed "bar" to "hello"
         for(int i = 0; i < 100; i++) {
-            bar[i] = i;
+            hello[i] = i;
         }
 
         System.out.println("The number of even numbers in foo is:");
         System.out.println(countEvenNum(foo,5));
 
-        System.out.println("The number of even numbers in bar is:");
-        System.out.println(countEvenNum(bar,100));
+        System.out.println("The number of even numbers in hello is:");
+        System.out.println(countEvenNum(hello,100));
     }
-    //this looks really weird tbh
 
     private static int countEvenNum(int[] arr, int size){
         int count = 0;
